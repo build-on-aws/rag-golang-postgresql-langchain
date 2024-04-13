@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-	"log"
+	"fmt"
 	"net/http"
 
 	"github.com/tmc/langchaingo/documentloaders"
@@ -12,7 +12,7 @@ import (
 
 func loadDocs(source string) error {
 
-	log.Println("loading data from", source)
+	fmt.Println("loading data from", source)
 
 	store, err := getVectorStore()
 
@@ -25,7 +25,7 @@ func loadDocs(source string) error {
 		return err
 	}
 
-	log.Println("no. of documents to be loaded", len(docs))
+	fmt.Println("no. of documents to be loaded", len(docs))
 
 	_, err = store.AddDocuments(context.Background(), docs)
 
@@ -33,7 +33,7 @@ func loadDocs(source string) error {
 		return err
 	}
 
-	log.Println("data successfully loaded into vector store")
+	fmt.Println("data successfully loaded into vector store")
 
 	return nil
 }

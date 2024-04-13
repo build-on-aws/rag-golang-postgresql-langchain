@@ -62,7 +62,7 @@ func getVectorStore() (vectorstores.VectorStore, error) {
 		return nil, err
 	}
 
-	log.Println("vector store ready")
+	fmt.Println("vector store ready")
 
 	return store, nil
 }
