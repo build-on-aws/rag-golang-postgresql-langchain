@@ -2,7 +2,7 @@
 
 > Implement RAG (using LangChain and PostgreSQL) to improve the accuracy and relevance of LLM outputs
 
-This repository contains source code corresponding to the blog post [How to use Retrieval Augmented Generation (RAG) for Go applications](TODO) which covers how to leverage the [Go programming language](https://go.dev/) to use Vector Databases and techniques such as Retrieval Augmented Generation (RAG) with [langchaingo](https://github.com/tmc/langchaingo). 
+This repository contains source code corresponding to the blog post [How to use Retrieval Augmented Generation (RAG) for Go applications](https://community.aws/content/2f1mRXuakNO22izRKDVNRazzxhb) which covers how to leverage the [Go programming language](https://go.dev/) to use Vector Databases and techniques such as Retrieval Augmented Generation (RAG) with [langchaingo](https://github.com/tmc/langchaingo). 
 
 ![](arch.png)
 
